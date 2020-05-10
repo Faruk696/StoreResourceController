@@ -81,19 +81,22 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel     
                 </div>
+                <form action="store" method="POST"> 
+                    {{ csrf_field() }}
+                    <input type="text" name="text">
+                    <input type="submit" value="Submit_it">
+                </form>
+                <br>
+                <form action="store/ABC" method="POST">
+                    {{ method_field('DELETE') }} 
+                    {{ csrf_field() }}
+                    <input type="text" name="text">
+                    <input type="submit" value="Submit_it">
+                </form>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+
             </div>
         </div>
     </body>

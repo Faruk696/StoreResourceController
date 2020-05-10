@@ -21,4 +21,10 @@ class storeController extends Controller
     public function edit(){
         echo "Hi this is from EDIT method and this is a get REQUEST";
     }
+    public function store(Request $request){
+        echo "THIS is store ".$request->text;
+    }
+    public function destroy($id){
+        echo "THIS is distroy ".$id;
+    }
 }
